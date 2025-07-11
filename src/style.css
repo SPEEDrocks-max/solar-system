@@ -1,0 +1,68 @@
+
+#planet-info-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  color: #f2f2f2;
+  padding: 20px 16px;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+  border-left: 2px solid #333;
+  transition: all 0.3s ease;
+}
+
+#planet-info-panel.hidden {
+  display: none;
+}
+
+#panel-planet-name {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 8px;
+}
+
+#panel-planet-img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#panel-planet-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  margin-bottom: 1.5rem;
+}
+
+#panel-close-btn {
+  padding: 20px;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+#panel-close-btn:hover {
+  background: #dddddd;
+}
